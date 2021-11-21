@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Coding World- Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-1 mb-lg-0" style="margin-left: 230px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link">WorkWithUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Certificates</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="clearfix">
+        <img src="./images/second-image.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Main Image" style="width: 40%;
+            margin-right: 218px;">
+        <div class="text-box" style="
+        margin-left: 190px;">
+            <h1 class="text-info" style="padding-top: 104px; padding-left: 48px; color: darkblue !important;">Hey!
+                Student, <br> What do you wish to do today?
+            </h1>
+            <button type="button" class="btn btn-primary btn-lg button" style="margin-top: 40px;">Register for
+                free</button>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4" style="width: 65%;margin: 0 15pc;">
+        <div class="col">
+            <div class="card">
+                <img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/000000/external-assignment-higher-education-inipagistudio-mixed-inipagistudio.png"
+                    class="card-img-top" style="width: 35%; margin: 20px; vertical-align:middle ;" alt="Assignments" />
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Assignment</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/64/000000/external-notes-university-campus-inipagistudio-mixed-inipagistudio.png"
+                    style="width: 35%; margin: 20px; vertical-align:middle ;" class="card-img-top" />
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Notes</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="data:image/png;base64,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"
+                    class="card-img-top" style="width: 35%; margin: 20px; vertical-align:middle ;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Resources</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAB+ElEQVRoge2Zv2sUQRTHP2/nLoLxF5ZaCJo9RLE4bm1EwXQp/Be0vVWiqIWtQgoVC1EDd6ktLRVioRAwVjeSxohkRbCx9ndzbp6FBqLm/BFmcrvLfKrlscx3vrw3b3Z2IBAI/AkBSDrZU4Qjw57M+tB5mzaORQDlNQEgRwFqq0M2jWXlOelm+musaPGVGEA02Gm5qIyR74t9VYrKiE1jqUxGBi72MhAWe5EJRopGMFI0an9/5f9IutkssFuILvTSfY9djz8IHxmZAA4py49a3ex+c/r1Hg8av+GztD4LnDC1/HnSWbrUmrF1j1r+jOT9vIFwF9iCyHV0++Lh7qsJX3rejCyc3f/WtuNTKOPAokCs6KyvcvPetezpeE7lfVPQ88DHH+X2IulkV8ZuZ5tc6WxI+33WTvq9tHHLGA4I3AM2I1zeMYKzrjbkfUSdnYOc7yNr0Zqx9Ui3nclzpoCtwBeUG+/6ctWVhncjSSc7jjKtcBBA4cHyVzO5MLn3jUsdb0aad17uMiPmGspJAIUsQs7ZdOyhDz1vRkzdLKGMAp9QnSL6cLPXTvq+9HyW1qivMloLH0bmEN0pai7aDfxodG7EpvG46zH/hcqcR4KRohGMFI3KGPmp/Zb5r3w1MxKu3gpAZYxU7epN54c7lfUjyJNhzyEQKAPfADHgyZvPlBoEAAAAAElFTkSuQmCC"
+                    class="card-img-top" style="width: 35%; margin: 20px; vertical-align:middle;">
+                <div class=" card-body">
+                    <h5 class="card-title">Videos</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
